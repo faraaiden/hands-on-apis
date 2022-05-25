@@ -257,7 +257,7 @@ button {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 730px) {
   .footer__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -279,7 +279,7 @@ button {
       flex-wrap: wrap;
   gap: 0 16px;
 }
-@media screen and (min-width: 670px) {
+@media screen and (min-width: 730px) {
   .footer__links {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
