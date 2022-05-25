@@ -1,0 +1,42 @@
+@use '../util' as *;
+
+.footer {
+  background-color: var(--color-gray-600);
+  color: var(--color-gray-700);
+
+  &__region {
+    font-size: 15px;
+    padding: 15px 30px;
+    border-bottom: 1px solid var(--color-gray-200);
+  }
+
+  &__list {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0 16px;
+
+    @include breakpoint(medium) {
+      flex-wrap: nowrap;
+      gap: 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    padding: 15px;
+    display: inline-block;
+  }
+}

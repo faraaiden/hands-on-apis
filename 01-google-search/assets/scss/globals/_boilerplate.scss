@@ -6,6 +6,31 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: var(--font-arial);
+  font-size: 13px;
+}
+
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+button, input {
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  user-select: none;
+}
+
+button {
+  cursor: pointer;
 }
