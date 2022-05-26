@@ -1,0 +1,47 @@
+@use '../util' as *;
+
+.main-search {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 584px;
+    margin: 0 auto;
+    min-height: 88vh;
+  }
+
+  &__logo {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__suggestions {
+    display: flex;
+
+    @include breakpoint(small) {
+      gap: 10px;
+    }
+  }
+
+  &__random {
+    text-align: center;
+  }
+
+  &__langs {
+    line-height: 22px;
+    text-align: center;
+
+    a {
+      color: var(--color-blue-800);
+      display: inline-block;
+
+      &:first-child {
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+  }
+}

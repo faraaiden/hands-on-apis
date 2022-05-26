@@ -10,39 +10,4 @@
     align-items: center;
     gap: 15px;
   }
-
-  &__btn {
-    display: grid;
-    place-items: center;
-    border-radius: 100px;
-    border: none;
-    background-color: transparent;
-
-    svg {
-      width: 24px;
-      height: 24px;
-      fill: var(--color-gray-500);
-    }
-
-    &--menu {
-      width: 40px;
-      height: 40px;
-      &:hover {
-        background-color: var(--color-gray-400);
-      }
-    }
-
-    &--account {
-      width: 34px;
-      height: 34px;
-      background-color: var(--color-gray-500);
-      color: #fff;
-      font-size: 16px;
-      font-weight: semi-bold;
-
-      &:hover {
-        opacity: .85;
-      }
-    }
-  }
 }

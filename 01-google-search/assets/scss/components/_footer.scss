@@ -28,6 +28,10 @@
     flex-wrap: wrap;
     gap: 0 16px;
 
+    &--2 {
+      justify-content: flex-start;
+    }
+
     @include breakpoint(medium) {
       flex-wrap: nowrap;
       gap: 0;

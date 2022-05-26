@@ -1,5 +1,66 @@
+@use '../util' as *;
+
 .header {
+  width: 100%;
+
   &__container {
     padding: 6px 18px;
+
+    &--2 {
+      padding-top: 20px;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    gap: 25px;
+    width: 100%;
+
+    @include breakpoint(upper-small) {
+      width: 70%;
+    }
+  }
+
+  &__right {
+    display: none;
+    width: 30%;
+    justify-content: flex-end;
+
+    @include breakpoint(upper-small) {
+      display: flex;
+    }
+
+    &-account {
+      margin-left: 8px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__bottom {
+    &::-webkit-scrollbar { /* Chrome, Safari and Opera */
+      display: none;
+    }
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  &__logo {
+    max-width: 92px;
+    height: 30px;
+    position: relative;
+    top: 4px;
   }
 }

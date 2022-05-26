@@ -1,0 +1,88 @@
+@use '../util' as *;
+
+.search-result {
+  &__container {
+    padding: 12px 28px 40px;
+    max-width: 600px;
+  }
+
+  &__total-data {
+    color: var(--color-gray-700);
+    margin-bottom: 16px;
+    display: inline-block;
+  }
+
+  &__data,
+  &__popular {
+    display: grid;
+    gap: 24px;
+
+    @include breakpoint(upper-small) {
+      gap: 30px;
+    }
+  }
+
+  &__item {
+    &-link {
+      color: var(--color-balck-900);
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-heading {
+      margin: 2px 0 2px;
+      color: var(--color-blue-800);
+      font-size: 16px;
+      font-weight: 500;
+
+      @include breakpoint(upper-small) {
+        font-size: 20px;
+      }
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__faq {
+    &-box {
+      border-top: 1px solid var(--color-gray-200);
+      border-bottom: 1px solid var(--color-gray-200);
+    }
+
+    &-heading {
+      font-size: 18px;
+      color: var(--color-balck-800);
+      font-weight: 500;
+
+      @include breakpoint(upper-small) {
+        font-size: 22px;
+      }
+    }
+
+    &-question {
+      width: 100%;
+      min-height: 40px;
+      display: flex;
+      align-items: center;
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      color: var(--color-black-900);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-answer {
+      padding-bottom: 12px;
+      display: none;
+    }
+
+    &-icon {
+      color: var(--color-gray-500);
+    }
+  }
+}
